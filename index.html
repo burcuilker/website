@@ -26,22 +26,30 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="font-secondary text-white mb-n2">Burcu <span class="text-primary">&</span> İlker</h1>
-        </a>
+        <div class="d-flex align-items-center">
+            <div class="text-white small mr-4" id="countdown-container">
+                <span class="countdown-label">Buluşmamıza kalan süre:</span>
+            </div>
+            <div class="text-white small mr-4" id="countdown-container">
+                <span id="countdown-timer">Yükleniyor...</span>
+            </div>
+        </div>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto py-0">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <div class="navbar-nav py-0">
                 <a href="#home" class="nav-item nav-link active">Ana Sayfa</a>
                 <a href="#story" class="nav-item nav-link">Hikayemiz</a>
                 <a href="#gallery" class="nav-item nav-link">Galeri</a>
             </div>
-            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                <h1 class="font-secondary text-white mb-n2">Burcu <span class="text-primary">&</span> sİlker</h1>
-            </a>
         </div>
+        <a href="index.html" class="navbar-brand d-none d-lg-block">
+            <h1 class="font-secondary text-white mb-n2">Burcu <span class="text-primary">&</span> İlker</h1>
+        </a>
+        <a href="index.html" class="navbar-brand d-block d-lg-none ml-2">
+            <h1 class="font-secondary text-white mb-n2">Burcu <span class="text-primary">&</span> İlker</h1>
+        </a>
     </nav>
     <!-- Navbar End -->
 
@@ -50,382 +58,903 @@
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-7.JPG" style="object-fit: cover;">
+                                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-1.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-4.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-10.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-5.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-11.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-1.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-12.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-8.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-13.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-9.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-14.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-10.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-15.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-11.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-16.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-13.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-17.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-14.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-18.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-15.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-19.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-16.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-2.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-17.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-20.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-18.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-21.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-19.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-22.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-20.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-23.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-21.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-24.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-22.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-25.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-23.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-26.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-24.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-27.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-25.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-28.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-26.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-29.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-28.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-3.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-30.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-30.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="./img/carousel-31.JPG" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-31.JPG" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"><i class="far fa-heart text-white"></i></h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
                             </div>
-                            <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="vid/video.MP4" data-target="#videoModal">
-                                <span></span>
-                            </button>-->
                         </div>
                     </div>
                 </div>
-                <!-- Add more photos here -->
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-32.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-33.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-34.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-35.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-36.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-37.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-38.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-39.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-4.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-40.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-41.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-42.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-43.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-44.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-45.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-46.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-47.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-48.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-49.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-5.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-50.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-51.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-52.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-53.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-54.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-55.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-56.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-57.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-58.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-59.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-6.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-60.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-61.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-62.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-63.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-64.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-65.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-66.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-67.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-68.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-69.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-7.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-8.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="./img/carousel/carousel-9.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <i class="far fa-heart text-white"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
                 <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
@@ -468,80 +997,80 @@
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
-                <div class="row">
+                                <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="./img/story-1.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid mr-md-3" src="./img/story/story-1.JPG" alt="" width="350" height="500">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 ml-md-3">
-                            <h4 class="mb-2">Tanışma</h4>
-                            <p class="text-uppercase mb-2">11 Eylül 2019</p>
+                            <h4 class="mb-2">Story 1</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
-                            <h4 class="mb-2">İlk El Ele Tutuşma</h4>
-                            <p class="text-uppercase mb-2">14 Kasım 2022</p>
+                            <h4 class="mb-2">Story 2</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="./img/story-2.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid ml-md-3" src="./img/story/story-2.JPG" alt="" width="350" height="500">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="./img/story-3.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid mr-md-3" src="./img/story/story-3.JPG" alt="" width="350" height="500">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 ml-md-3">
-                            <h4 class="mb-2">First Kiss</h4>
-                            <p class="text-uppercase mb-2">2 Aralık 2022</p>
+                            <h4 class="mb-2">Story 3</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
-                            <h4 class="mb-2">Çıkma Teklifi</h4>
-                            <p class="text-uppercase mb-2">4 Aralık 2022</p>
+                            <h4 class="mb-2">Story 4</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="./img/story-4.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid ml-md-3" src="./img/story/story-4.JPG" alt="" width="350" height="500">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="./img/story-5.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid mr-md-3" src="./img/story/story-5.JPG" alt="" width="350" height="500">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 ml-md-3">
-                            <h4 class="mb-2">İlk Yılbaşımız</h4>
-                            <p class="text-uppercase mb-2">31 Aralık 2022</p>
+                            <h4 class="mb-2">Story 5</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
-                            <h4 class="mb-2">İlk Gezimiz</h4>
-                            <p class="text-uppercase mb-2">16 Ocak 2023</p>
+                            <h4 class="mb-2">Story 6</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="./img/story-6.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid ml-md-3" src="./img/story/story-6.JPG" alt="" width="350" height="500">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="./img/story-7.JPG" alt="" width="350" height="500">
+                        <img class="img-fluid mr-md-3" src="./img/story/story-7.JPG" alt="" width="350" height="500">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 ml-md-3">
-                            <h4 class="mb-2">İlk Tatilimiz</h4>
-                            <p class="text-uppercase mb-2">12 Ağustos 2023</p>
+                            <h4 class="mb-2">Story 7</h4>
+                            <p class="text-uppercase mb-2">Date</p>
                         </div>
                     </div>
                 </div>
@@ -558,435 +1087,1119 @@
             <i class="far fa-heart text-black"></i>
         </div>
         <div class="owl-carousel gallery-carousel">
+                        <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-1.JPG" alt="">
+                <a href="./img/gallery/gallery-1.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-10.JPG" alt="">
+                <a href="./img/gallery/gallery-10.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-100.JPG" alt="">
+                <a href="./img/gallery/gallery-100.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-101.JPG" alt="">
+                <a href="./img/gallery/gallery-101.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-102.JPG" alt="">
+                <a href="./img/gallery/gallery-102.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-103.JPG" alt="">
+                <a href="./img/gallery/gallery-103.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-104.JPG" alt="">
+                <a href="./img/gallery/gallery-104.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-105.JPG" alt="">
+                <a href="./img/gallery/gallery-105.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-106.JPG" alt="">
+                <a href="./img/gallery/gallery-106.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-107.JPG" alt="">
+                <a href="./img/gallery/gallery-107.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-108.JPG" alt="">
+                <a href="./img/gallery/gallery-108.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-109.JPG" alt="">
+                <a href="./img/gallery/gallery-109.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-11.JPG" alt="">
+                <a href="./img/gallery/gallery-11.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-110.JPG" alt="">
+                <a href="./img/gallery/gallery-110.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-111.JPG" alt="">
+                <a href="./img/gallery/gallery-111.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-112.JPG" alt="">
+                <a href="./img/gallery/gallery-112.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-113.JPG" alt="">
+                <a href="./img/gallery/gallery-113.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-114.JPG" alt="">
+                <a href="./img/gallery/gallery-114.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-115.JPG" alt="">
+                <a href="./img/gallery/gallery-115.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-116.JPG" alt="">
+                <a href="./img/gallery/gallery-116.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-117.JPG" alt="">
+                <a href="./img/gallery/gallery-117.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-118.JPG" alt="">
+                <a href="./img/gallery/gallery-118.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-119.JPG" alt="">
+                <a href="./img/gallery/gallery-119.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-12.JPG" alt="">
+                <a href="./img/gallery/gallery-12.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-120.JPG" alt="">
+                <a href="./img/gallery/gallery-120.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-121.JPG" alt="">
+                <a href="./img/gallery/gallery-121.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-122.JPG" alt="">
+                <a href="./img/gallery/gallery-122.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-123.JPG" alt="">
+                <a href="./img/gallery/gallery-123.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-124.JPG" alt="">
+                <a href="./img/gallery/gallery-124.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-125.JPG" alt="">
+                <a href="./img/gallery/gallery-125.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-126.JPG" alt="">
+                <a href="./img/gallery/gallery-126.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-127.JPG" alt="">
+                <a href="./img/gallery/gallery-127.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-128.JPG" alt="">
+                <a href="./img/gallery/gallery-128.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-129.JPG" alt="">
+                <a href="./img/gallery/gallery-129.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-13.JPG" alt="">
+                <a href="./img/gallery/gallery-13.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-130.JPG" alt="">
+                <a href="./img/gallery/gallery-130.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-131.JPG" alt="">
+                <a href="./img/gallery/gallery-131.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-132.JPG" alt="">
+                <a href="./img/gallery/gallery-132.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-133.JPG" alt="">
+                <a href="./img/gallery/gallery-133.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-134.JPG" alt="">
+                <a href="./img/gallery/gallery-134.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-135.JPG" alt="">
+                <a href="./img/gallery/gallery-135.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-136.JPG" alt="">
+                <a href="./img/gallery/gallery-136.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-137.JPG" alt="">
+                <a href="./img/gallery/gallery-137.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-138.JPG" alt="">
+                <a href="./img/gallery/gallery-138.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-139.JPG" alt="">
+                <a href="./img/gallery/gallery-139.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-14.JPG" alt="">
+                <a href="./img/gallery/gallery-14.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-140.JPG" alt="">
+                <a href="./img/gallery/gallery-140.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-141.JPG" alt="">
+                <a href="./img/gallery/gallery-141.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-142.JPG" alt="">
+                <a href="./img/gallery/gallery-142.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-143.JPG" alt="">
+                <a href="./img/gallery/gallery-143.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-144.JPG" alt="">
+                <a href="./img/gallery/gallery-144.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-145.JPG" alt="">
+                <a href="./img/gallery/gallery-145.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-146.JPG" alt="">
+                <a href="./img/gallery/gallery-146.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-147.JPG" alt="">
+                <a href="./img/gallery/gallery-147.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-148.JPG" alt="">
+                <a href="./img/gallery/gallery-148.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-149.JPG" alt="">
+                <a href="./img/gallery/gallery-149.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-15.JPG" alt="">
+                <a href="./img/gallery/gallery-15.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-150.JPG" alt="">
+                <a href="./img/gallery/gallery-150.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-151.JPG" alt="">
+                <a href="./img/gallery/gallery-151.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-152.JPG" alt="">
+                <a href="./img/gallery/gallery-152.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-153.JPG" alt="">
+                <a href="./img/gallery/gallery-153.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-154.JPG" alt="">
+                <a href="./img/gallery/gallery-154.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-155.JPG" alt="">
+                <a href="./img/gallery/gallery-155.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-156.JPG" alt="">
+                <a href="./img/gallery/gallery-156.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-157.JPG" alt="">
+                <a href="./img/gallery/gallery-157.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-158.JPG" alt="">
+                <a href="./img/gallery/gallery-158.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-159.JPG" alt="">
+                <a href="./img/gallery/gallery-159.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-16.JPG" alt="">
+                <a href="./img/gallery/gallery-16.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-160.JPG" alt="">
+                <a href="./img/gallery/gallery-160.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-161.JPG" alt="">
+                <a href="./img/gallery/gallery-161.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-162.JPG" alt="">
+                <a href="./img/gallery/gallery-162.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-163.JPG" alt="">
+                <a href="./img/gallery/gallery-163.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-164.JPG" alt="">
+                <a href="./img/gallery/gallery-164.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-165.JPG" alt="">
+                <a href="./img/gallery/gallery-165.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-166.JPG" alt="">
+                <a href="./img/gallery/gallery-166.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-167.JPG" alt="">
+                <a href="./img/gallery/gallery-167.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-168.JPG" alt="">
+                <a href="./img/gallery/gallery-168.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-169.JPG" alt="">
+                <a href="./img/gallery/gallery-169.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-17.JPG" alt="">
+                <a href="./img/gallery/gallery-17.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-170.JPG" alt="">
+                <a href="./img/gallery/gallery-170.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-171.JPG" alt="">
+                <a href="./img/gallery/gallery-171.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-172.JPG" alt="">
+                <a href="./img/gallery/gallery-172.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-173.JPG" alt="">
+                <a href="./img/gallery/gallery-173.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-174.JPG" alt="">
+                <a href="./img/gallery/gallery-174.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-175.JPG" alt="">
+                <a href="./img/gallery/gallery-175.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-176.JPG" alt="">
+                <a href="./img/gallery/gallery-176.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-177.JPG" alt="">
+                <a href="./img/gallery/gallery-177.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-178.JPG" alt="">
+                <a href="./img/gallery/gallery-178.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-179.JPG" alt="">
+                <a href="./img/gallery/gallery-179.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-18.JPG" alt="">
+                <a href="./img/gallery/gallery-18.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-180.JPG" alt="">
+                <a href="./img/gallery/gallery-180.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-181.JPG" alt="">
+                <a href="./img/gallery/gallery-181.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-182.JPG" alt="">
+                <a href="./img/gallery/gallery-182.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-183.JPG" alt="">
+                <a href="./img/gallery/gallery-183.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-184.JPG" alt="">
+                <a href="./img/gallery/gallery-184.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-185.JPG" alt="">
+                <a href="./img/gallery/gallery-185.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-186.JPG" alt="">
+                <a href="./img/gallery/gallery-186.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-19.JPG" alt="">
+                <a href="./img/gallery/gallery-19.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-2.JPG" alt="">
+                <a href="./img/gallery/gallery-2.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-20.JPG" alt="">
+                <a href="./img/gallery/gallery-20.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-21.JPG" alt="">
+                <a href="./img/gallery/gallery-21.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-22.JPG" alt="">
+                <a href="./img/gallery/gallery-22.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-23.JPG" alt="">
+                <a href="./img/gallery/gallery-23.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-24.JPG" alt="">
+                <a href="./img/gallery/gallery-24.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-25.JPG" alt="">
+                <a href="./img/gallery/gallery-25.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-26.JPG" alt="">
+                <a href="./img/gallery/gallery-26.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-27.JPG" alt="">
+                <a href="./img/gallery/gallery-27.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-28.JPG" alt="">
+                <a href="./img/gallery/gallery-28.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-29.JPG" alt="">
+                <a href="./img/gallery/gallery-29.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-3.JPG" alt="">
+                <a href="./img/gallery/gallery-3.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-30.JPG" alt="">
+                <a href="./img/gallery/gallery-30.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-31.JPG" alt="">
+                <a href="./img/gallery/gallery-31.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-32.JPG" alt="">
+                <a href="./img/gallery/gallery-32.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-33.JPG" alt="">
+                <a href="./img/gallery/gallery-33.JPG" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-1.JPG" alt="">
-                <a href="./img/gallery-1.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-34.JPG" alt="">
+                <a href="./img/gallery/gallery-34.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-2.JPG" alt="">
-                <a href="./img/gallery-2.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-35.JPG" alt="">
+                <a href="./img/gallery/gallery-35.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-3.JPG" alt="">
-                <a href="./img/gallery-3.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-36.JPG" alt="">
+                <a href="./img/gallery/gallery-36.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-4.JPG" alt="">
-                <a href="./img/gallery-4.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-37.JPG" alt="">
+                <a href="./img/gallery/gallery-37.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-5.JPG" alt="">
-                <a href="./img/gallery-5.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-38.JPG" alt="">
+                <a href="./img/gallery/gallery-38.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-6.JPG" alt="">
-                <a href="./img/gallery-6.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-39.JPG" alt="">
+                <a href="./img/gallery/gallery-39.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-7.JPG" alt="">
-                <a href="./img/gallery-7.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-4.JPG" alt="">
+                <a href="./img/gallery/gallery-4.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-8.JPG" alt="">
-                <a href="./img/gallery-8.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-40.JPG" alt="">
+                <a href="./img/gallery/gallery-40.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-9.JPG" alt="">
-                <a href="./img/gallery-9.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-41.JPG" alt="">
+                <a href="./img/gallery/gallery-41.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-10.JPG" alt="">
-                <a href="./img/gallery-10.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-42.JPG" alt="">
+                <a href="./img/gallery/gallery-42.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-11.JPG" alt="">
-                <a href="./img/gallery-11.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-43.JPG" alt="">
+                <a href="./img/gallery/gallery-43.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-12.JPG" alt="">
-                <a href="./img/gallery-12.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-44.JPG" alt="">
+                <a href="./img/gallery/gallery-44.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-13.JPG" alt="">
-                <a href="./img/gallery-13.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-45.JPG" alt="">
+                <a href="./img/gallery/gallery-45.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-14.JPG" alt="">
-                <a href="./img/gallery-14.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-46.JPG" alt="">
+                <a href="./img/gallery/gallery-46.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-15.JPG" alt="">
-                <a href="./img/gallery-15.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-47.JPG" alt="">
+                <a href="./img/gallery/gallery-47.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-16.JPG" alt="">
-                <a href="./img/gallery-16.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-48.JPG" alt="">
+                <a href="./img/gallery/gallery-48.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-17.JPG" alt="">
-                <a href="./img/gallery-17.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-49.JPG" alt="">
+                <a href="./img/gallery/gallery-49.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-18.JPG" alt="">
-                <a href="./img/gallery-18.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-5.JPG" alt="">
+                <a href="./img/gallery/gallery-5.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-19.JPG" alt="">
-                <a href="./img/gallery-19.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-50.JPG" alt="">
+                <a href="./img/gallery/gallery-50.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-20.JPG" alt="">
-                <a href="./img/gallery-20.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-51.JPG" alt="">
+                <a href="./img/gallery/gallery-51.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-21.JPG" alt="">
-                <a href="./img/gallery-21.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-52.JPG" alt="">
+                <a href="./img/gallery/gallery-52.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-22.JPG" alt="">
-                <a href="./img/gallery-22.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-53.JPG" alt="">
+                <a href="./img/gallery/gallery-53.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-23.JPG" alt="">
-                <a href="./img/gallery-23.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-54.JPG" alt="">
+                <a href="./img/gallery/gallery-54.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-24.JPG" alt="">
-                <a href="./img/gallery-24.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-55.JPG" alt="">
+                <a href="./img/gallery/gallery-55.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-25.JPG" alt="">
-                <a href="./img/gallery-25.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-56.JPG" alt="">
+                <a href="./img/gallery/gallery-56.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-26.JPG" alt="">
-                <a href="./img/gallery-26.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-57.JPG" alt="">
+                <a href="./img/gallery/gallery-57.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-27.JPG" alt="">
-                <a href="./img/gallery-27.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-58.JPG" alt="">
+                <a href="./img/gallery/gallery-58.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-28.JPG" alt="">
-                <a href="./img/gallery-28.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-59.JPG" alt="">
+                <a href="./img/gallery/gallery-59.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-29.JPG" alt="">
-                <a href="./img/gallery-29.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-6.JPG" alt="">
+                <a href="./img/gallery/gallery-6.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-30.JPG" alt="">
-                <a href="./img/gallery-30.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-60.JPG" alt="">
+                <a href="./img/gallery/gallery-60.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-31.JPG" alt="">
-                <a href="./img/gallery-31.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-61.JPG" alt="">
+                <a href="./img/gallery/gallery-61.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-32.JPG" alt="">
-                <a href="./img/gallery-32.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-62.JPG" alt="">
+                <a href="./img/gallery/gallery-62.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-33.JPG" alt="">
-                <a href="./img/gallery-33.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-63.JPG" alt="">
+                <a href="./img/gallery/gallery-63.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-34.JPG" alt="">
-                <a href="./img/gallery-34.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-64.JPG" alt="">
+                <a href="./img/gallery/gallery-64.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-35.JPG" alt="">
-                <a href="./img/gallery-35.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-65.JPG" alt="">
+                <a href="./img/gallery/gallery-65.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-36.JPG" alt="">
-                <a href="./img/gallery-36.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-66.JPG" alt="">
+                <a href="./img/gallery/gallery-66.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-37.JPG" alt="">
-                <a href="./img/gallery-37.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-67.JPG" alt="">
+                <a href="./img/gallery/gallery-67.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-38.JPG" alt="">
-                <a href="./img/gallery-38.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-68.JPG" alt="">
+                <a href="./img/gallery/gallery-68.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-39.JPG" alt="">
-                <a href="./img/gallery-39.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-69.JPG" alt="">
+                <a href="./img/gallery/gallery-69.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-40.JPG" alt="">
-                <a href="./img/gallery-40.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-7.JPG" alt="">
+                <a href="./img/gallery/gallery-7.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-41.JPG" alt="">
-                <a href="./img/gallery-41.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-70.JPG" alt="">
+                <a href="./img/gallery/gallery-70.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-42.JPG" alt="">
-                <a href="./img/gallery-42.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-71.JPG" alt="">
+                <a href="./img/gallery/gallery-71.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-43.JPG" alt="">
-                <a href="./img/gallery-43.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-72.JPG" alt="">
+                <a href="./img/gallery/gallery-72.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-44.JPG" alt="">
-                <a href="./img/gallery-44.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-73.JPG" alt="">
+                <a href="./img/gallery/gallery-73.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-45.JPG" alt="">
-                <a href="./img/gallery-45.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-74.JPG" alt="">
+                <a href="./img/gallery/gallery-74.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-46.JPG" alt="">
-                <a href="./img/gallery-46.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-75.JPG" alt="">
+                <a href="./img/gallery/gallery-75.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-47.JPG" alt="">
-                <a href="./img/gallery-47.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-76.JPG" alt="">
+                <a href="./img/gallery/gallery-76.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-48.JPG" alt="">
-                <a href="./img/gallery-48.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-77.JPG" alt="">
+                <a href="./img/gallery/gallery-77.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-49.JPG" alt="">
-                <a href="./img/gallery-49.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-78.JPG" alt="">
+                <a href="./img/gallery/gallery-78.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-50.JPG" alt="">
-                <a href="./img/gallery-50.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-79.JPG" alt="">
+                <a href="./img/gallery/gallery-79.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-51.JPG" alt="">
-                <a href="./img/gallery-51.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-8.JPG" alt="">
+                <a href="./img/gallery/gallery-8.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-52.JPG" alt="">
-                <a href="./img/gallery-52.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-80.JPG" alt="">
+                <a href="./img/gallery/gallery-80.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-53.JPG" alt="">
-                <a href="./img/gallery-53.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-81.JPG" alt="">
+                <a href="./img/gallery/gallery-81.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-54.JPG" alt="">
-                <a href="./img/gallery-54.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-82.JPG" alt="">
+                <a href="./img/gallery/gallery-82.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-55.JPG" alt="">
-                <a href="./img/gallery-55.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-83.JPG" alt="">
+                <a href="./img/gallery/gallery-83.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-56.JPG" alt="">
-                <a href="./img/gallery-56.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-84.JPG" alt="">
+                <a href="./img/gallery/gallery-84.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-57.JPG" alt="">
-                <a href="./img/gallery-57.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-85.JPG" alt="">
+                <a href="./img/gallery/gallery-85.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-58.JPG" alt="">
-                <a href="./img/gallery-58.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-86.JPG" alt="">
+                <a href="./img/gallery/gallery-86.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-59.JPG" alt="">
-                <a href="./img/gallery-59.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-87.JPG" alt="">
+                <a href="./img/gallery/gallery-87.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-60.JPG" alt="">
-                <a href="./img/gallery-60.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-88.JPG" alt="">
+                <a href="./img/gallery/gallery-88.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-61.JPG" alt="">
-                <a href="./img/gallery-61.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-89.JPG" alt="">
+                <a href="./img/gallery/gallery-89.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-62.JPG" alt="">
-                <a href="./img/gallery-62.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-9.JPG" alt="">
+                <a href="./img/gallery/gallery-9.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-63.JPG" alt="">
-                <a href="./img/gallery-63.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-90.JPG" alt="">
+                <a href="./img/gallery/gallery-90.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-64.JPG" alt="">
-                <a href="./img/gallery-64.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-91.JPG" alt="">
+                <a href="./img/gallery/gallery-91.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-65.JPG" alt="">
-                <a href="./img/gallery-65.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-92.JPG" alt="">
+                <a href="./img/gallery/gallery-92.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-66.JPG" alt="">
-                <a href="./img/gallery-66.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-93.JPG" alt="">
+                <a href="./img/gallery/gallery-93.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-67.JPG" alt="">
-                <a href="./img/gallery-67.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-94.JPG" alt="">
+                <a href="./img/gallery/gallery-94.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-68.JPG" alt="">
-                <a href="./img/gallery-68.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-95.JPG" alt="">
+                <a href="./img/gallery/gallery-95.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-69.JPG" alt="">
-                <a href="./img/gallery-69.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-96.JPG" alt="">
+                <a href="./img/gallery/gallery-96.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-70.JPG" alt="">
-                <a href="./img/gallery-70.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-97.JPG" alt="">
+                <a href="./img/gallery/gallery-97.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-71.JPG" alt="">
-                <a href="./img/gallery-71.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-98.JPG" alt="">
+                <a href="./img/gallery/gallery-98.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/gallery-72.JPG" alt="">
-                <a href="./img/gallery-72.JPG" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="./img/gallery/gallery-99.JPG" alt="">
+                <a href="./img/gallery/gallery-99.JPG" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
@@ -1026,4 +2239,102 @@
     <script src="js/main.js"></script>
 </body>
 
+<style>
+    /* Geri sayım alanı */
+    #countdown-container {
+        color: #fff;
+        text-align: right;
+        font-family: "Poppins", sans-serif;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0.9;
+        margin-bottom: 3px;
+        letter-spacing: 0.3px;
+    }
+
+    #countdown-timer {
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .time-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 5px 8px;
+        font-weight: bold;
+        font-size: 0.95rem;
+        min-width: 45px;
+        text-align: center;
+        box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .time-box small {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: normal;
+        opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-3px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 991px) {
+        #countdown-container {
+            text-align: left;
+            border-left: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 10px;
+            padding-top: 8px;
+        }
+
+        #countdown-timer {
+            justify-content: flex-start;
+        }
+    }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // 🔧 Hedef tarih (Yıl, Ay-1, Gün, Saat, Dakika)
+    const targetDate = new Date(2025, 9, 25, 18, 0, 0).getTime();
+
+    const timerElement = document.getElementById("countdown-timer");
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+            timerElement.innerHTML = "Artık buluştuk ❤️";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        //timerElement.innerHTML = `${days} gün ${hours} saat ${minutes} dakika ${seconds} saniye`;
+        timerElement.innerHTML = `
+            <span class="time-box">${days}<small>gün</small></span>
+            <span class="time-box">${hours}<small>saat</small></span>
+            <span class="time-box">${minutes}<small>dk</small></span>
+            <span class="time-box">${seconds}<small>sn</small></span>
+        `;
+    }
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+});
+</script>
 </html>
