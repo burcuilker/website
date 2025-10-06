@@ -9762,3 +9762,133 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+    /* Geri sayım alanı */
+    #countdown-container {
+        color: #fff;
+        text-align: right;
+        font-family: "Poppins", sans-serif;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0.9;
+        margin-bottom: 3px;
+        letter-spacing: 0.3px;
+    }
+
+    #countdown-timer {
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .time-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 5px 8px;
+        font-weight: bold;
+        font-size: 0.95rem;
+        min-width: 45px;
+        text-align: center;
+        box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .time-box small {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: normal;
+        opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-3px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 991px) {
+        #countdown-container {
+            text-align: left;
+            border-left: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 10px;
+            padding-top: 8px;
+        }
+
+        #countdown-timer {
+            justify-content: flex-start;
+        }
+    }
+
+    /* Floating emoji animation */
+    .floating-emoji {
+        position: fixed;
+        bottom: -50px;
+        animation: floatUp linear forwards;
+        z-index: 9999;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-110vh) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    /* Modal styles */
+    .celebration-modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .celebration-modal-content {
+        background: white;
+        color: #333;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+        margin: 15% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .celebration-modal button {
+        background: #ff4d6d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    .celebration-modal button:hover {
+        background: #e03e5e;
+    }
