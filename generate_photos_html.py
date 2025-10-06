@@ -9,6 +9,7 @@ def rename_images(directory: str, category: str):
     for i, filename in enumerate(files, start=1):
         ext = os.path.splitext(filename)[1]
         new_name = f"{category}-{i}{ext}"
+        #new_name = f"a_{i}{ext}"
         old_path = os.path.join(directory, filename)
         new_path = os.path.join(directory, new_name)
         os.rename(old_path, new_path)
@@ -27,8 +28,8 @@ def generate_html(directory: str, category: str) -> str:
                     <img class="position-absolute w-100 h-100" src="./img/{category}/{f}" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Burcu & İlker</h1>
-                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4" style="opacity: 0.4;">Burcu & İlker</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4" style="opacity: 0.4;">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
                                     <i class="far fa-heart text-white"></i>
                                 </h3>
