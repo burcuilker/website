@@ -2387,6 +2387,22 @@
             <button onclick="closeCelebration()">Kapat ❤️</button>
         </div>
     </div>
+
+    <!-- Music note trigger -->
+    <div id="music-note" title="A hidden tune awaits 🎶">🎶</div>
+
+    <!-- Modal -->
+    <div id="song-modal" class="song-modal">
+        <div class="song-modal-content">
+            <h3>You reignite my lust for life</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xrhm2rQtWTk?si=SOPB3zvi6wecOLUy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <button class="close-song-btn" onclick="closeSong()">Kapat</button>
+        </div>
+    </div>
 </body>
 
 <script>
@@ -2474,6 +2490,23 @@
             setTimeout(() => emoji.remove(), 10000);
         }, 400);
     }
+
+    const musicNote = document.getElementById("music-note");
+    const songModal = document.getElementById("song-modal");
+
+    musicNote.addEventListener("click", () => {
+        songModal.style.display = "block";
+    });
+
+    function closeSong() {
+        songModal.style.display = "none";
+    }
+
+    window.addEventListener("click", (e) => {
+        if (e.target === songModal) {
+            songModal.style.display = "none";
+        }
+    });
 </script>
 
 </html>
