@@ -11062,7 +11062,7 @@ a.text-dark:focus {
 }
 
 .celebration-modal button {
-  background: #ff4d6d;
+  background: var(--primary);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -11073,7 +11073,7 @@ a.text-dark:focus {
 }
 
 .celebration-modal button:hover {
-  background: #e03e5e;
+  opacity: 80%;
 }
 
 /* music note placement */
@@ -11119,7 +11119,7 @@ a.text-dark:focus {
 
 .song-modal-content h3 {
   font-family: 'Great Vibes', cursive;
-  color: #e03e5e;
+  color: var(--primary);
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
@@ -11130,7 +11130,7 @@ a.text-dark:focus {
 }
 
 .close-song-btn {
-  background: #ff4d6d;
+  background: var(--primary);
   border: none;
   color: white;
   padding: 8px 20px;
@@ -11141,7 +11141,7 @@ a.text-dark:focus {
 }
 
 .close-song-btn:hover {
-  background: #e03e5e;
+  opacity: 80%;
 }
 
 /* Fullscreen loader overlay */
